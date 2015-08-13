@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>result</title>
+<style type="text/css">
+#bg{ 
+	display:none; 
+	position: absolute; 
+	top: 0%;  
+	left: 0%;  
+	width: 100%;  
+	height: 100%;  
+	background-color: black;  
+	z-index:1001; 
+	-moz-opacity: 0.7;  
+	opacity:.70;  
+	filter: alpha(opacity=70);}
+
+/************这里是invitation部分********/
+/*#show{display: none;
+	position: absolute;  top: 25%;  left: 22%; 
+	 width: 53%;  height: 49%;
+	  padding: 8px;  
+	  border: 8px solid #E8E9F7; 
+	   background-color:red;  
+	   z-index:1002; 
+	    overflow: auto;}*/
+.invitation{
+	display: none;
+	position: absolute;  top: 25%;  left: 22%; 
+	width:860px;
+	height:550px;
+	/* width: 53%;  height: 49%;*/
+	/*background:#FCF;*/
+	/*margin:334px auto 0;*/
+	color:#323232;
+	z-index:1002;  overflow: auto;
+	box-shadow:0px 0px 3px #999;
+	-moz-box-shadow:0px 0px 3px #999;
+	-webkit-box-shadow:0px 0px 3px #999;
+	-ms-box-shadow:0px 0px 3px #999;
+	}
+.invitation .title{
+	width:850px;
+	height:50px;
+	background:#eee;
+	padding-left:10px;
+	line-height:50px;
+	font-size:18px;
+	}
+/************这里是sidebar部分********/
+.invitation .sidebar{
+	position:absolute;
+	width:170px;
+	height:500px;
+	background:#999;
+	font-size:14px;
+	}
+.invitation .sidebar ul li{
+	list-style:none;
+	line-height:40px;
+	padding-left:25px;
+	width:145px;
+	height:50px;
+	}
+.invitation .sidebar ul li a{
+	display:block;
+	color:#fff;
+	}
+.invitation .sidebar .current{
+	background:#b7b7b7;
+	}
+/************下面是第一个main部分********/
+.invitation .main{
+	width:690px;
+	height:500px;
+	/*background:yellow;*/
+	float:right;
+	color:#646464;
+	font-size:12px;
+	}
+.invitation .main .part-1{
+	position:relative;
+	width:620px;
+	height:30px;
+	padding:10px 20px 10px 50px;
+	border-bottom:1px solid #999;
+	}
+.part-1 .picture{
+	display:block;
+	width:14px;
+	height:16px;
+	/*background:green;*/
+	float:left;
+	background:url(../images/inv-box.png) no-repeat bottom center;
+	}
+.part-1 .tip{
+	float:left;
+	}	
+.part-1 .person{
+	position:absolute;
+	right:50px;
+	}	
+.person .count{
+	margin:0px 5px;
+	color:orange;
+	}
+.invitation .main .part-2{
+	width:640px;
+	height:200px;
+	/*height:auto;*/
+	border-bottom:1px solid #999;
+	padding:10px 0px 50px 50px;
+	font-size:12px;
+	}
+.part-2 ul li{
+	position:relative;
+	margin:20px 60px 20px 0px;
+	display:inline-block;
+	list-style:none;
+	float:left;
+	width:55px;
+	height:70px;
+	text-align:center;
+	/*background:red;*/
+	}
+.part-2 ul li .head{
+	}
+.part-2 ul li img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	overflow:hidden;
+	}		
+.part-2 .image{
+	position:absolute;
+	top:-8px;
+	right:-4px;
+	width:16px;
+	height:18px;
+	background:url(../images/inv-box.png) no-repeat;
+	}	
+.part-2 .image-two{
+	background:url(inv-box1.png);
+	}
+.invitation .main .part-3{
+	width:260px;
+	height:35px;
+	text-align:center;
+	margin:50px auto;
+	}
+.part-3 .two a{
+	display:block;
+	float:left;
+	margin-right:10px;
+	width:110px;
+	height:35px;
+	text-align:center;
+	line-height:34px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	font-size:18px;
+	color:#fff;
+	}	
+
+.part-3 .invites a{
+		background:#39af6f;
+}
+.part-3 .delete a{
+		background:#c8c8c8;
+}
+/************下面是第二个main部分********/
+.main .quick{
+	margin-left:40px;
+	font-size:14px;
+	}	
+.main .qq{
+	margin-top:22px;
+	width:330px;
+	height:32px;
+	/*background:red;*/
+	}
+.main .link{
+	border:1px solid #ccc;
+	}		
+.main .copy a{
+	display:block;
+	text-align:center;
+	line-height:30px;
+	width:50px;
+	height:32px;
+	color:#fff;
+	background:#2baa3f;
+	float:right;
+	}	
+	
+	
+</style>
+<script type="text/javascript">
+function showdiv()
+		{            
+            document.getElementById("bg").style.display ="block";
+            document.getElementById("invitate").style.display ="block";
+        }
+function hidediv() 
+		{
+            document.getElementById("bg").style.display ='none';
+            document.getElementById("invitate").style.display ='none';
+        }
+</script>
+</head>
+
+<body>
+   <div style="background:#3b99d8;" onclick="showdiv()">邀请朋友测评</div>
+<div id="bg"></div>
+<!-----------------下面是invitation部分------------->
+<div class="invitation" id="invitate">
+  <div class="title">邀请好友来测评</div>
+  <div class="sidebar" id="side">
+    <ul>
+      <li class="current"><a href="#">快速邀请</a></li>
+      <li><a href="#">邀请站内好友</a></li>
+    </ul>
+  </div>
+  <!-----------------下面是第一个main部分------------->
+  <div class="main">
+    <div class="part-1" id="partOne"> <span class="picture"></span> <span class="tip">全选</span> <span class="person">已选<span class="count">0</span>人</span> </div>
+    <div class="part-2" id="partTwo">
+      <ul>
+        <li> <span class="head"><img src="images/res_1.jpg" /></span> <span class="image"></span>
+          <p>张蓝蓝</p>
+        </li>
+        <li> <span class="head"><img src="images/res_2.jpg" /></span> <span class="image"></span>
+          <p>js123</p>
+        </li>
+        <li> <span class="head"><img src="images/res_3.jpg" /></span> <span class="image"></span>
+          <p>ZHY</p>
+        </li>
+        <li> <span class="head"><img src="images/res_4.jpg" /></span> <span class="image"></span>
+          <p>LXG8023</p>
+        </li>
+        <li> <span class="head"><img src="images/res_5.jpg" /></span> <span class="image"></span>
+          <p>张晓娟</p>
+        </li>
+        <li> <span class="head"><img src="images/res_1.jpg" /></span> <span class="image"></span>
+          <p>LXG8023</p>
+        </li>
+        <li> <span class="head"><img src="images/res_2.jpg" /></span> <span class="image"></span>
+          <p>js123</p>
+        </li>
+        <li> <span class="head"><img src="images/res_3.jpg" /></span> <span class="image"></span>
+          <p>ZHY</p>
+        </li>
+        <li> <span class="head"><img src="images/res_4.jpg" /></span> <span class="image"></span>
+          <p>LXG8023</p>
+        </li>
+        <li> <span class="head"><img src="images/res_5.jpg" /></span> <span class="image"></span>
+          <p>张晓娟</p>
+        </li>
+      </ul>
+    </div>
+    <div class="part-3"> <span class="two invites"><a href="#">邀请</a></span> <span class="two delete"><a href="#">取消选择</a></span> </div>
+  </div>
+  <!-----------------下面是第二个main部分------------->
+  <div class="main" style="display:none;">
+    <div class="quick">
+      <p class="qq">复制下面的链接，邀请你的好友一起测评吧！</p>
+      <div class="qq link">
+        <input type="text" value="http:www.neimeng.com/ceping" style="width:280px; height:32px; border:0px;"/>
+        <span class="copy"><a href="#">拷贝</a></span> </div>
+    </div>
+  </div>
+</div>
+<!------------------这里invitation结束---------->
+
+</body>
+</html>
